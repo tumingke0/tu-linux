@@ -7,7 +7,7 @@
 	centos默认保存到 "/root/.ssh/id_rsa" 和 "/root/.ssh/id_rsa.pub"
 <br/>
 （2）输入密码，类似开机密码，可不输入，然后一路enter下去
-
+<br/>
 （3）完了之后，着重注意保存路径及其名称即可！
 
 # 乙服务器：
