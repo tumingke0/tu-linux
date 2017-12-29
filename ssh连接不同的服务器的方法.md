@@ -1,13 +1,13 @@
 # 甲服务器：
 ## 使用ssh-keygen在 （"甲" ）服务器上生成 公钥私钥（即 RSA加密）
 	执行：ssh-keygen 
-（1）<br/>```
+（1）<br/>
 可自行输入保存路径如：<br/>
 	  /home/.ssh/rsa-key <br/>
 	（ 注意: "/home/.ssh/"是路径，"rsa-key"是公钥私钥的名称，即会在 "/home/.ssh" 下生成 "rsa-key" 和 "rsa-key.pub" )<br/>
 默认路径：<br/>
 	centos默认保存到 "/root/.ssh/id_rsa" 和 "/root/.ssh/id_rsa.pub"
-<br/>```
+<br/>
 （2）输入密码，类似开机密码，可不输入，然后一路enter下去
 <br/>
 （3）完了之后，着重注意保存路径及其名称即可！
