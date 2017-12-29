@@ -1,4 +1,4 @@
-- 甲服务器：
+## 甲服务器：
 # 使用ssh-keygen在 （"甲" ）服务器上生成 公钥私钥（即 RSA加密）
 	执行 ssh-keygen 
 （1）可自输入保存路径如：/home/.ssh/rsa-key (注意: /home/.ssh/是路径，rsa-key是公钥私钥的名称，即会在/home/.ssh下生成 rsa-key 和 rsa-key.pub)
@@ -8,7 +8,7 @@
 
 （3）完了之后，着重注意保存路径及其名称即可！
 
-- 乙服务器：
+## 乙服务器：
 # 然后就是使用了，把新生成的id_rsa.pub的内容公钥放到你想ssh连接的（"乙"）服务器的认证列表里
 （1）认证列表的路径：
 		grep AuthorizedKeysFile /etc/ssh/sshd_config 
@@ -21,13 +21,13 @@
 		vim ~/.ssh/authorized_keys
 	把复制的pub信息，粘贴至这个文件即可！
 
-# 到甲服务器执行
+## 到甲服务器执行
 	ssh root@127.0.0.1
   或者指定端口号：
 	ssh root@127.0.0.1 -p 22 -i ~/.ssh/id_rsa
 
 	
-# 可禁用密码登录
+## 可禁用密码登录
 	vim /etc/ssh/sshd_config
 	把 PasswordAuthentication  改为 no 即可
 	
