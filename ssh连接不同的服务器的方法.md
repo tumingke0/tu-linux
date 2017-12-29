@@ -45,7 +45,6 @@
 # 打通后， 可使用 scp 复制文件
 	scp [参数] [原路径] [目标路径]
 	
-	```
 	-1 强制scp命令使用协议ssh1
 	-2 强制scp命令使用协议ssh2
 	-4 强制scp命令只使用IPv4寻址
@@ -63,7 +62,6 @@
 	-o ssh_option 如果习惯于使用ssh_config(5)中的参数传递方式，
 	-P port 注意是大写的P, port是指定数据传输用到的端口号
 	-S program 指定加密传输时所使用的程序。此程序必须能够理解ssh(1)的选项。
-	```
 	
 	1. 从本地服务器复制到远程服务器
 	scp -r /opt/soft/demo.tar root@10.6.159.147:/opt/soft/scptest
@@ -71,5 +69,11 @@
 
 	2. 从远程复制到本地
 	scp -r root@10.6.159.147:/opt/soft/demo.tar /opt/soft/
+
+	注意：scp 复制文件的时候，可不用加 -r 参数
+
+
+
+
 
 
